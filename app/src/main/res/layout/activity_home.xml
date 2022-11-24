@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Eventos"
+        android:textColor="#F000A1F1" android:textSize="45dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold" android:layout_margin="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Eventos para hoy"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="20dp"
+tools:context=".MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modificar Evento"
+    android:textColor="#F000A1F1" android:textSize="45dp"
+    android:fontFamily="sans-serif-condensed-light"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="30dp" android:textStyle="bold"
+    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nombre" android:textSize="20dp"
+    android:textColor="#535054"
+    android:layout_marginBottom="20dp"
+    />
+<EditText
+    android:id="@+id/nombre"
+    android:layout_width="match_parent"
+    android:layout_height="55dp" android:inputType="text"
+    android:background="@drawable/edt_background"
+    android:drawableLeft="@drawable/ic_baseline_text_snippet_24"
+    android:paddingLeft="10dp" android:drawablePadding="10dp"
+    android:hint="Nombre del Evento"
+    android:layout_marginBottom="20dp" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Fecha del Evento"
+    android:textSize="20dp"
+    android:textColor="#535054"
+    android:layout_marginBottom="20dp"
+    />
+<EditText
+    android:id="@+id/fecha"
+    android:layout_width="match_parent"
+    android:layout_height="55dp" android:inputType="date"
+    android:background="@drawable/edt_background"
+    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+    android:paddingLeft="10dp" android:drawablePadding="10dp"
+    android:hint="Fecha del Evento"
+    android:layout_marginBottom="20dp"
+    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Detalles" android:textSize="20dp"
+    android:textColor="#535054"
+    android:layout_marginBottom="20dp"
+    />
+<EditText
+    android:id="@+id/detalle"
+    android:layout_width="match_parent"
+    android:layout_height="130dp" android:inputType="text"
+    android:background="@drawable/edt_background"
+    android:gravity="top" android:paddingTop="20dp"
+    android:paddingLeft="15dp"
+    android:hint="Detalles del Evento"
+    android:layout_marginBottom="40dp"
+    />
+<Button
+    android:id="@+id/btnInsertar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" android:text="Guardar
+Cambios" android:layout_marginBottom="30dp"
+    android:background="@drawable/edt_background"
+    />
+</LinearLayout>
+
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="16dp">
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+
+    android:src="@drawable/ic_baseline_event_24"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/nombreEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Evento"
+            android:textColor="#535054"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/fechaEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textColor="#535054"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/detallesEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle"
+            android:textColor="#535054"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+</LinearLayout>
